@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="assets/css/global.css">
         <link rel="stylesheet" href="assets/css/search.css">
         <link rel="stylesheet" href="assets/css/header.css">
+        <link rel="stylesheet" href="assets/css/listing-movies.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
         <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700&amp;display=swap" rel="stylesheet">
         <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>

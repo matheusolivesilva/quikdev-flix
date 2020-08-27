@@ -1,0 +1,46 @@
+#trending {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    position:relative;
+    top: -5vw;
+    overflow: hidden;
+}
+
+.movies {
+    width: 90vw;
+    display: flex;
+    justify-content: flex-start;
+    overflow-y: hidden;
+    text-align: center;
+}
+
+.movies .movies-item  {
+    padding: 0 .5rem 2rem;
+    width: 15vw;
+}
+
+.movies .movies-item .genders {
+    font-size: 0.9rem;
+    margin: .3rem 0;
+    font-weight: bold;
+    color: #999
+}
+
+.movies .movies-item .title {
+    font-size: 1rem;
+    color: #403181
+}
+
+.movies .movies-item .overview {
+    font-size: 0.85rem;
+    color: #555;
+    font-weight: lighter;
+}
+
+.release-date {
+    font-size: 0.9rem;
+    font-weight: normal;
+    color: #333;
+}
+
