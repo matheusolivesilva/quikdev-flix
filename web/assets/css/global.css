@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0
+}
+
+html, body {
+    overflow-x: hidden;
+    font-family: Montserrat, sans-serif;    
+    font-size: 1rem;
+}
+
+a, button {
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    position: relative;
+    word-break: keep-all;
+    word-wrap: normal;
+    color: #403181;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    transition: all 400ms cubic-bezier(1, .04, .48, 1) 0s;
+}
