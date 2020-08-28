@@ -1,89 +1,32 @@
 <section id="trending">
     <div class="movies">
-        <a href="#" class="movies-item">
-            <img src="https://image.tmdb.org/t/p/w220_and_h330_face/sy6DvAu72kjoseZEjocnm2ZZ09i.jpg">
-            <div class="genders">Action, Horror, Thriller</div>
-            <h3 class="title">Peninsulad</h3>
-            <time class="release-date">Jul 15, 2020</time>
-            <div class="overview">A soldier and his team battle hordes of post-apocalyptic zombies in the wastelands of the Korean Peninsula.</div>
-        </a>
-           <a href="#" class="movies-item">
-            <img src="https://image.tmdb.org/t/p/w220_and_h330_face/sy6DvAu72kjoseZEjocnm2ZZ09i.jpg">
-            <div class="genders">Action, Horror, Thriller</div>
-            <h3 class="title">Peninsulad</h3>
-            <time class="release-date">Jul 15, 2020</time>
-            <div class="overview">A soldier and his team battle hordes of post-apocalyptic zombies in the wastelands of the Korean Peninsula.</div>
-        </a>
-          <a href="#" class="movies-item">
-            <img src="https://image.tmdb.org/t/p/w220_and_h330_face/sy6DvAu72kjoseZEjocnm2ZZ09i.jpg">
-            <div class="genders">Action, Horror, Thriller</div>
-            <h3 class="title">Peninsulad</h3>
-            <time class="release-date">Jul 15, 2020</time>
-            <div class="overview">A soldier and his team battle hordes of post-apocalyptic zombies in the wastelands of the Korean Peninsula.</div>
-        </a>
-          <a href="#" class="movies-item">
-            <img src="https://image.tmdb.org/t/p/w220_and_h330_face/sy6DvAu72kjoseZEjocnm2ZZ09i.jpg">
-            <div class="genders">Action, Horror, Thriller</div>
-            <h3 class="title">Peninsulad</h3>
-            <time class="release-date">Jul 15, 2020</time>
-            <div class="overview">A soldier and his team battle hordes of post-apocalyptic zombies in the wastelands of the Korean Peninsula.</div>
-        </a>
-          <a href="#" class="movies-item">
-            <img src="https://image.tmdb.org/t/p/w220_and_h330_face/sy6DvAu72kjoseZEjocnm2ZZ09i.jpg">
-            <div class="genders">Action, Horror, Thriller</div>
-            <h3 class="title">Peninsulad</h3>
-            <time class="release-date">Jul 15, 2020</time>
-            <div class="overview">A soldier and his team battle hordes of post-apocalyptic zombies in the wastelands of the Korean Peninsula.</div>
-        </a>
-          <a href="#" class="movies-item">
-            <img src="https://image.tmdb.org/t/p/w220_and_h330_face/sy6DvAu72kjoseZEjocnm2ZZ09i.jpg">
-            <div class="genders">Action, Horror, Thriller</div>
-            <h3 class="title">Peninsulad</h3>
-            <time class="release-date">Jul 15, 2020</time>
-            <div class="overview">A soldier and his team battle hordes of post-apocalyptic zombies in the wastelands of the Korean Peninsula.</div>
-        </a>
-          <a href="#" class="movies-item">
-            <img src="https://image.tmdb.org/t/p/w220_and_h330_face/sy6DvAu72kjoseZEjocnm2ZZ09i.jpg">
-            <div class="genders">Action, Horror, Thriller</div>
-            <h3 class="title">Peninsulad</h3>
-            <time class="release-date">Jul 15, 2020</time>
-            <div class="overview">A soldier and his team battle hordes of post-apocalyptic zombies in the wastelands of the Korean Peninsula.</div>
-        </a>
-          <a href="#" class="movies-item">
-            <img src="https://image.tmdb.org/t/p/w220_and_h330_face/sy6DvAu72kjoseZEjocnm2ZZ09i.jpg">
-            <div class="genders">Action, Horror, Thriller</div>
-            <h3 class="title">Peninsulad</h3>
-            <time class="release-date">Jul 15, 2020</time>
-            <div class="overview">A soldier and his team battle hordes of post-apocalyptic zombies in the wastelands of the Korean Peninsula.</div>
-        </a>
-          <a href="#" class="movies-item">
-            <img src="https://image.tmdb.org/t/p/w220_and_h330_face/sy6DvAu72kjoseZEjocnm2ZZ09i.jpg">
-            <div class="genders">Action, Horror, Thriller</div>
-            <h3 class="title">Peninsulad</h3>
-            <time class="release-date">Jul 15, 2020</time>
-            <div class="overview">A soldier and his team battle hordes of post-apocalyptic zombies in the wastelands of the Korean Peninsula.</div>
-        </a>
-  <a href="#" class="movies-item">
-            <img src="https://image.tmdb.org/t/p/w220_and_h330_face/sy6DvAu72kjoseZEjocnm2ZZ09i.jpg">
-            <div class="genders">Action, Horror, Thriller</div>
-            <h3 class="title">Peninsulad</h3>
-            <time class="release-date">Jul 15, 2020</time>
-            <div class="overview">A soldier and his team battle hordes of post-apocalyptic zombies in the wastelands of the Korean Peninsula.</div>
-        </a>
-        <a href="#" class="movies-item">
-            <img src="https://image.tmdb.org/t/p/w220_and_h330_face/sy6DvAu72kjoseZEjocnm2ZZ09i.jpg">
-            <div class="genders">Action, Horror, Thriller</div>
-            <h3 class="title">Peninsulad</h3>
-            <time class="release-date">Jul 15, 2020</time>
-            <div class="overview">A soldier and his team battle hordes of post-apocalyptic zombies in the wastelands of the Korean Peninsula.</div>
-        </a>
-        <a href="#" class="movies-item">
-            <img src="https://image.tmdb.org/t/p/w220_and_h330_face/sy6DvAu72kjoseZEjocnm2ZZ09i.jpg">
-            <div class="genders">Action, Horror, Thriller</div>
-            <h3 class="title">Peninsulad</h3>
-            <time class="release-date">Jul 15, 2020</time>
-            <div class="overview">A soldier and his team battle hordes of post-apocalyptic zombies in the wastelands of the Korean Peninsula.</div>
-        </a>
-     
+       
     </div>
 </section>
+
+<script>
+$(document).ready(function() {
+  $.get(`${apiBaseUri}movies`, function(data) {
+      let moviesHTML = '';
+      data.movies.forEach(function(movie) {
+        moviesHTML += loadMoviesFromTemplate(
+          movie.original, 
+          formatGenres(movie.original.genres),
+          formatDate(movie.originalreleaseDate)
+        );
+      });
+      $('.movies').html(moviesHTML);
+  });
+
+  function loadMoviesFromTemplate(movie, genres, releaseDate) {
+    return `<a href="${apiBaseUri}/movie/${movie.id}" class="movies-item">
+              <img src="https://image.tmdb.org/t/p/w220_and_h330_face/${movie.poster}">
+              <div class="genders">${genres}</div>
+              <h3 class="title">${movie.name}</h3>
+              <time class="release-date">${releaseDate}</time>
+              <div class="overview">${movie.overview}</div>
+          </a>`;
+  }
+});
+
+</script>
