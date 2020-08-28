@@ -5,6 +5,7 @@
     position:relative;
     top: -5vw;
     overflow: hidden;
+    height: 30rem;
 }
 
 .movies {
@@ -44,8 +45,16 @@
     color: #333;
 }
 
+.movies-item img {
+    width: 13vw;
+}
+
 @media (max-width: 767px) {
     .movies .movies-item {
         width: 70vw;
+    }
+
+    .movies-item img {
+        width: 40vw;
     }
 }
