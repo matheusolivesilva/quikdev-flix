@@ -12,6 +12,10 @@ class Genre implements \JsonSerializable
         $this->name = $name;
     }
 
+    public function __get($attribute)
+    {
+        return $this->$attribute;
+    }
     public function jsonSerialize() {
         return [
             'id' => $this->id,
