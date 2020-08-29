@@ -51,6 +51,12 @@
     outline: none;
 }
 
+.not-found {
+    color: #fff;
+    font-size: 2rem;
+    display: none;
+}
+
 @media (max-width: 767px) {
     #search button {
         width: 30vw;

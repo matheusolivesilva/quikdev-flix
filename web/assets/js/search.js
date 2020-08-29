@@ -2,6 +2,7 @@ $(document).ready(function() {
   $('#search input').on('input', function(e) {
     e.preventDefault();
     searchMovies();
+    isNotFoundMovies();
   });
 
   $('#search input').on('input',function() {
@@ -22,7 +23,8 @@ $(document).ready(function() {
       $('#search button span').text('Search');
       $('#search button i').removeClass('fas fa-times');
       $('#search button i').addClass('fas fa-search');    
-      searchMovies();
+      isNotFoundMovies();
+      jQuery('.not-found').hide(300);
     }
   });
 
@@ -33,5 +35,13 @@ $(document).ready(function() {
       return movieName.indexOf(keyword) !== -1;
     });
     loopMoviesAndAppendToHtml(foundMovies);
+  }
+
+  function isNotFoundMovies() {
+    if(jQuery('.movies').children().length === 0) {
+        jQuery('.not-found').show(300);
+        return;
+    }
+    jQuery('.not-found').hide(300);
   }
 });
