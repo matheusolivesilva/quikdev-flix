@@ -2,26 +2,21 @@
 
 namespace App\Http\Controllers;
 
-use App\Movie;
+use App\Traits\ApiTrait;
 use Illuminate\Http\Request;
 use App\Factory\MovieFactory;
-use  GuzzleHttp\Client;
-use GuzzleHttp\Psr7\Response;
 
 class MovieController extends Controller
 {
 
-    private const apiKey = '4ec327e462149c3710d63be84b81cf4f';
-    private const apiKeyQueryParameter = '?api_key=';
-    private const baseUri = 'https://api.themoviedb.org/3/';
-    private $client;
+    use ApiTrait;
     private $trendingMoviesUri;
     private $singleMovieUri;
 
     public function __construct() {
-       $this->client = new Client(['base_uri' => self::baseUri]); 
-       $this->trendingMoviesUri = 'trending/movie/week';
-       $this->singleMovieUri = 'movie/';
+        $this->loadApiData(); 
+        $this->trendingMoviesUri = 'trending/movie/week';
+        $this->singleMovieUri = 'movie/';
     }
 
     public function index()
@@ -29,8 +24,7 @@ class MovieController extends Controller
         $trendingMoviesResponse = $this->doRequest($this->trendingMoviesUri);
         $foundTrendingMovies = json_decode($trendingMoviesResponse->getBody(), true);
         
-        $allTrendingMovies = [];
-        foreach($foundTrendingMovies['results'] as $movie) {
+        foreach($foundTrendingMovies['results'] as $movie) { 
             $allTrendingMovies['movies'][] = (object) $this->show($movie['id']);
         }
 
@@ -53,14 +47,6 @@ class MovieController extends Controller
         );
     }
     
-    private function doRequest($uri): Response
-    {
-        return $this->client->request(
-            'GET', 
-            $uri . self::apiKeyQueryParameter . self::apiKey
-        );
-    }
-
     private function orderMoviesByAlphabetically($allMovies)
     {
         usort($allMovies, function($currentMovie, $nextMovie) {
