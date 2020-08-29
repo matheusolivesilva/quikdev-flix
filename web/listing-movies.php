@@ -5,19 +5,25 @@
 </section>
 
 <script>
-$(document).ready(function() {
-  $.get(`${apiBaseUri}movies`, function(data) {
-      let moviesHTML = '';
-      data.movies.forEach(function(movie) {
-        moviesHTML += loadMoviesFromTemplate(
-          movie.original, 
-          formatGenres(movie.original.genres),
-          formatDate(movie.originalreleaseDate)
-        );
-      });
-      $('.movies').html(moviesHTML);
+  let allMovies = {};
+    $.get(`${apiBaseUri}movies`, function(data) {
+      allMovies = data; 
+      loopMoviesAndAppendToHtml(data.movies);
   });
 
+
+  function loopMoviesAndAppendToHtml(moviesArray) {
+    let moviesHTML = '';
+    moviesArray.forEach(function(movie) {
+      moviesHTML += loadMoviesFromTemplate(
+        movie.original, 
+        formatGenres(movie.original.genres),
+        formatDate(movie.originalreleaseDate)
+      );
+    });
+    $('.movies').html(moviesHTML);
+  }
+  
   function loadMoviesFromTemplate(movie, genres, releaseDate) {
     return `<a href="${apiBaseUri}/movie/${movie.id}" class="movies-item">
               <img src="https://image.tmdb.org/t/p/w220_and_h330_face/${movie.poster}">
@@ -27,6 +33,5 @@ $(document).ready(function() {
               <div class="overview">${movie.overview}</div>
           </a>`;
   }
-});
 
 </script>
