@@ -1,11 +1,12 @@
 #trending {
     width: 100vw;
     display: flex;
-    justify-content: center;
     position:relative;
-    top: -5vw;
+    top: -10vw;
     overflow: hidden;
     height: 30rem;
+    flex-direction: column;
+    align-items: center;
 }
 
 .movies {
@@ -49,6 +50,36 @@
     width: 13vw;
 }
 
+.filter-by-categories {
+    color: #fff;
+    display: flex;
+    width: 90vw;
+    margin-bottom: 2rem;
+    align-items: center;
+}
+
+.filter-by-categories h2 {
+    margin-right: 1rem;
+}
+
+.filter-by-categories select {
+    border-radius: 30rem;
+    width: 15vw;
+    color: #fff;
+    font-weight: bold;
+    border: 1px solid #fff;
+    background: #433582;
+    padding: 5px 0 5px 5px;
+    font-size: 1.2rem;
+    outline: none;
+}
+
+.filter-by-categories select option {
+    color: #433582;
+    font-weight: bold;   
+    background: #ffffff;   
+}
+
 @media (max-width: 767px) {
     .movies .movies-item {
         width: 70vw;
@@ -56,5 +87,18 @@
 
     .movies-item img {
         width: 50vw;
+    }
+
+    .filter-by-categories select {
+        width: 30vw;
+        font-size: 1rem;
+    }
+
+    .filter-by-categories h2 {
+        font-size: 1.2rem;
+    }
+
+    #trending {
+        top: -30vw;
     }
 }
