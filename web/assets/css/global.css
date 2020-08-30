@@ -22,3 +22,19 @@ a, button {
     border-radius: 10px;
     transition: all 400ms cubic-bezier(1, .04, .48, 1) 0s;
 }
+
+.custom-background:after {
+    content: '';
+    background: linear-gradient(-31.35deg, #403181, rgb(64 49 126 / 0.7) 25%, #403181eb 69%, #403181 100%);
+    position: absolute;
+    width: 100%;
+    height: 100%;;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+
+section {
+    position: relative;
+    z-index: 100;
+}

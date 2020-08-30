@@ -44,15 +44,15 @@ $.get(`${apiBaseUri}genres`, function(data) {
       moviesHTML += loadMoviesFromTemplate(
         movie.original, 
         formatGenres(movie.original.genres),
-        formatDate(movie.originalreleaseDate)
+        formatDate(movie.original.releaseDate)
       );
     });
     $('.movies').html(moviesHTML);
   }
   
   function loadMoviesFromTemplate(movie, genres, releaseDate) {
-    return `<a href="${apiBaseUri}movie/${movie.id}" class="movies-item">
-              <img src="https://image.tmdb.org/t/p/w220_and_h330_face/${movie.poster}">
+    return `<a href="${'<?= WEB_URL ?>'}movies-details.php?id=${movie.id}" class="movies-item" title="${movie.name}">
+              <img src="https://image.tmdb.org/t/p/w220_and_h330_face/${movie.poster}" alt="${movie.name}">
               <div class="genders">${genres}</div>
               <h3 class="title">${movie.name}</h3>
               <time class="release-date">${releaseDate}</time>
@@ -63,6 +63,5 @@ $.get(`${apiBaseUri}genres`, function(data) {
   function loadGenresFromTemplate(genre) {
     return `<option value="${genre}">${genre}</option>`;
   }
-
 
 </script>

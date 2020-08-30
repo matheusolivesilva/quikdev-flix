@@ -1,4 +1,4 @@
-<section id="search-movies">
+<section id="search-movies" class="custom-background">
     <h1>QuickDevFlix</h1>
     <h2>Come to the purple side of the force!</h2>
     <form id="search">
