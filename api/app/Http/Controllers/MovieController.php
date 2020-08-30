@@ -24,6 +24,7 @@ class MovieController extends Controller
         $trendingMoviesResponse = $this->doRequest($this->trendingMoviesUri);
         $foundTrendingMovies = json_decode($trendingMoviesResponse->getBody(), true);
         
+        
         foreach($foundTrendingMovies['results'] as $movie) { 
             $allTrendingMovies['movies'][] = (object) $this->show($movie['id']);
         }

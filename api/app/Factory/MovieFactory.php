@@ -17,6 +17,13 @@ class MovieFactory implements FactoryInterface
         return new Movie(
             $data['id'],
             $data['poster_path'],
+            $data['backdrop_path'],
+            $data['runtime'],
+            $data['tagline'],
+            $data['status'],
+            $data['vote_average'],
+            $data['vote_count'],
+            $data['budget'],
             $data['title'],
             $data['overview'],
             $data['release_date'],
