@@ -1,0 +1,68 @@
+#search-movies {
+    background-image: url('../images/darth-vader-call.jpg');
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    flex-direction: column;    
+    justify-content: center;
+    background-size: cover;
+    background-position: center top;
+}
+
+#search-movies h1 {
+    font-size: 3rem;
+    margin: 1rem 0;
+}
+
+#search-movies h2 {
+    font-size: 1.6rem;
+}
+
+#search {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70vw;
+    margin: 1rem auto;
+    height: 3rem;
+}
+
+#search input {
+    height: 3rem;
+    width: 100%;
+    margin: 1rem 0;
+    outline: none;
+    border-radius: 100vw;
+    padding-left: 1rem;
+    border: none;
+}
+
+#search button {
+    position: absolute;
+    width: 10vw;
+    right: 0px;
+    background: purple;
+    color: #fff;
+    height: 100%;
+    border-radius: 100vw;
+    outline: none;
+}
+
+.not-found {
+    color: #fff;
+    font-size: 2rem;
+    display: none;
+}
+
+@media (max-width: 767px) {
+    #search button {
+        width: 30vw;
+    }
+
+    #search {
+        width: 90vw;
+    }
+}

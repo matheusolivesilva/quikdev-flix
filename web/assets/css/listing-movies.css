@@ -1,0 +1,104 @@
+#trending {
+    width: 100vw;
+    display: flex;
+    position:relative;
+    top: -10vw;
+    overflow: hidden;
+    height: 30rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+.movies {
+    width: 90vw;
+    display: flex;
+    justify-content: flex-start;
+    overflow-y: hidden;
+    text-align: center;
+}
+
+.movies .movies-item  {
+    padding: 0 .5rem 2rem;
+    width: 15vw;
+}
+
+.movies .movies-item .genders {
+    font-size: 0.9rem;
+    margin: .3rem 0;
+    font-weight: bold;
+    color: #999
+}
+
+.movies .movies-item .title {
+    font-size: 1rem;
+    color: #403181
+}
+
+.movies .movies-item .overview {
+    font-size: 0.85rem;
+    color: #555;
+    font-weight: lighter;
+}
+
+.release-date {
+    font-size: 0.9rem;
+    font-weight: normal;
+    color: #333;
+}
+
+.movies-item img {
+    width: 13vw;
+}
+
+.filter-by-categories {
+    color: #fff;
+    display: flex;
+    width: 90vw;
+    margin-bottom: 2rem;
+    align-items: center;
+}
+
+.filter-by-categories h2 {
+    margin-right: 1rem;
+}
+
+.filter-by-categories select {
+    border-radius: 30rem;
+    width: 15vw;
+    color: #fff;
+    font-weight: bold;
+    border: 1px solid #fff;
+    background: #433582;
+    padding: 5px 0 5px 5px;
+    font-size: 1.2rem;
+    outline: none;
+}
+
+.filter-by-categories select option {
+    color: #433582;
+    font-weight: bold;   
+    background: #ffffff;   
+}
+
+@media (max-width: 767px) {
+    .movies .movies-item {
+        width: 70vw;
+    }
+
+    .movies-item img {
+        width: 50vw;
+    }
+
+    .filter-by-categories select {
+        width: 30vw;
+        font-size: 1rem;
+    }
+
+    .filter-by-categories h2 {
+        font-size: 1.2rem;
+    }
+
+    #trending {
+        top: -30vw;
+    }
+}
